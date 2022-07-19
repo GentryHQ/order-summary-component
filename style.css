@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+
+    /* -----Color Varibles----- */
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desatured-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-color: var(--pale-blue);
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+
+/* Utility Classes */
+p {
+    font-size: 16px;
+    color: var(--Desatured-blue);
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 100px 2rem;
+}
+
+/* Wrapper */
+
+.wrapper {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.1);
+}
+
+.hero-img{
+    width: 100%;
+}
+
+
+/* Below the Image- Order summary */
+
+.order {
+    padding: 25px;
+}
+
+.order h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--Dark-blue);
+    padding: 20px 0;
+}
+
+.order p{
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Pricing Section */
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.plan {
+    margin-left: -10%;
+}
+
+.price h2 {
+    font-size: 1rem;
+    color: var(--Dark-blue);
+}
+
+.price p {
+    text-align: left;
+    font-size: .8rem;
+}
+
+.plan-link {
+    color: var(--bright-blue);
+    font-weight: 600;
+}
+
+.plan-link:hover {
+    text-decoration: none;
+    color: var(--Desatured-blue);
+}
+
+
+/* Button */
+
+.btn {
+    background-color: var(--bright-blue);
+    padding: 20px 30px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    margin: 40px 0 50px;
+    box-shadow: 0 10px 16px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+    background-color: var(--Desatured-blue);
+}
+
+.cancel {
+    text-align: center;
+    color: var(--Desatured-blue);
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+}
+
+.cancel:hover {
+    color: var(--Dark-blue);
+}
+
+/* Media Query For Larger Screen  */
+
+@media screen and (min-width:768px) {
+    body {
+        background-image: url('./images/pattern-background-desktop.svg');
+        background-size: contain;
+        background-position: top;
+    }
+}
